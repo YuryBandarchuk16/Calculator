@@ -62,7 +62,7 @@ class Engine {
     
     internal func performOperation(symbol : String) {
         if let operation = operations[symbol] {
-            switch operation {w
+            switch operation {
             case .Constant(let someConstant):
                 currentResult = someConstant
                 currentDescription = symbol
