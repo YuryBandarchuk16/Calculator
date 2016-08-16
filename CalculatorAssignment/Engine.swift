@@ -76,6 +76,7 @@ class Engine {
             case .UnaryOperation(let solver, let descriptor):
                 currentResult = solver(currentResult)
                 currentDescription = descriptor(currentDescription)
+                wasOperation = false
             case .Equals:
                 makePending()
             }
